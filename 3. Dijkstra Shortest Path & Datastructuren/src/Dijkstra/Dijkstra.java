@@ -32,7 +32,6 @@ public class Dijkstra {
                 }
 
                 minDistance = reis.getMinDistance() + weight;
-                System.out.println(reis.compareTo(v));
                 if (reis.compareTo(v) == -1) {
                     priorityQueue.remove(reis);
                     v.setVorigeReis(reis);
