@@ -1,11 +1,9 @@
 package Dijkstra;
 
-import java.util.List;
-
 public class Vlucht {
+    private static double modifier = 0.1;
 
-    public List<Integer> getWeight(List<Integer> tijd){
-        return tijd;
+    public static double getModifier() {
+        return modifier;
     }
-
 }

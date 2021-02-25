@@ -1,10 +1,10 @@
 package Dijkstra;
 
-import java.util.List;
-
 public class Treinrit {
+    private static double modifier = 0.7;
 
-    public List<Integer> getWeight(List<Integer> minuten){
-        return minuten;
+    public static double getModifier() {
+        return modifier;
     }
 }
+

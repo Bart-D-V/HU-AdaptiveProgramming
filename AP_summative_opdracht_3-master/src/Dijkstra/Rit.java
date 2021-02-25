@@ -1,10 +1,9 @@
 package Dijkstra;
 
-import java.util.List;
-
 public class Rit {
+    private static double modifier = 1.6;
 
-    public List<Integer> getWeight(List<Integer> kilometers){
-        return kilometers;
+    public static double getModifier() {
+        return modifier;
     }
 }
