@@ -19,17 +19,7 @@ public class Dijkstra {
                 Reis v = stap.getEindeReis();
 //                Reis u = stap.getStartReis();
                 double minDistance = 0;
-                double weight = 0;
-
-                if (stap.getType() instanceof Rit) {
-                    weight = (stap.getWeight() * Rit.getModifier());
-                } else if (stap.getType() instanceof Treinrit) {
-                    weight = (stap.getWeight() * Treinrit.getModifier());
-                } else if (stap.getType() instanceof Vlucht) {
-                    weight = (stap.getWeight() * Vlucht.getModifier());
-                } else {
-                    weight = stap.getWeight();
-                }
+                double weight = (stap.getWeight() * stap.getModifier());
 
                 minDistance = reis.getMinDistance() + weight;
                 if (reis.compareTo(v) == -1) {

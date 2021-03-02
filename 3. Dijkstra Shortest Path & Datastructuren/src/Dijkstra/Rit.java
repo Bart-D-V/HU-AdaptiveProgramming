@@ -1,9 +1,14 @@
 package Dijkstra;
 
-public class Rit {
-    private static double modifier = 0.7;
+public class Rit extends Stap{
+    private double modifier;
 
-    public static double getModifier() {
+    public Rit(double weight, Reis startReis, Reis eindeReis, double modifier) {
+        super(weight, startReis, eindeReis);
+        this.modifier = modifier;
+    }
+
+    public double getModifier() {
         return modifier;
     }
 }

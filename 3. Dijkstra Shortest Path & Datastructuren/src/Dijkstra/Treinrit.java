@@ -1,9 +1,14 @@
 package Dijkstra;
 
-public class Treinrit {
-    private static double modifier = 1.6;
+public class Treinrit extends Stap{
+    private double modifier;
 
-    public static double getModifier() {
+    public Treinrit(double weight, Reis startReis, Reis eindeReis, double modifier) {
+        super(weight, startReis, eindeReis);
+        this.modifier = modifier;
+    }
+
+    public double getModifier() {
         return modifier;
     }
 }

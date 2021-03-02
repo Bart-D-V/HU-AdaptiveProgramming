@@ -1,11 +1,10 @@
 package Dijkstra;
 
 
-public class Stap<Type> {
+public class Stap {
     private double weight;
     private Reis startReis;
     private Reis eindeReis;
-    private Type type;
 
     public Stap(double weight, Reis startReis, Reis eindeReis) {
         this.weight = weight;
@@ -37,7 +36,5 @@ public class Stap<Type> {
         return eindeReis;
     }
 
-    public Type getType() { return type; }
-
-    public void setType(Type type) { this.type = type; }
+    public double getModifier() { return 1.0;}
 }
